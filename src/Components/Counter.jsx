@@ -4,7 +4,6 @@ import { decrement, increment,incrementByValue } from "../Redux/features/counter
 const Counter = () => {
     const {count} = useSelector((state)=> state.counter)
     const dispatch = useDispatch()
-    // console.log(count)
     return (
         <div>
             <button className="w-28 h-10 rounded-lg bg-red-600 text-white" onClick={()=>dispatch(incrementByValue(5))}>Increment By 5</button>
